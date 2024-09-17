@@ -1,0 +1,148 @@
+body{
+    background-color:plum;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: normal;
+
+}
+
+
+.navbar{
+    background-color:olive;
+    padding: 16px;
+
+
+}
+.navbar-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+.navbar-list li{
+    display: inline;
+}
+.navbar-list a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: 1.2em;
+
+
+}
+@media screen (max-width:768px) {.navbar-list{
+    flex-direction:column;
+     text-align:center;
+}
+    
+}
+.hero{
+    background-image: url('https://www.solidbackgrounds.com/images/950x350/950x350-cadet-blue-solid-color-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+#gallery{
+    padding: 50px;
+    text-align: center;
+
+}
+#gallery h2{
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+
+}
+.card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.33%-20px);
+    margin-bottom: 20px;
+    transition:0.3s;
+    box-shadow: 0.3s;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+@media(max-width:1024px){
+    .card{
+        width:calc(50%-20px);
+    }
+    }
+@media(max-width:768px){
+    .card{
+        width: 100%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-card{
+    background-color: #ffffff;
+    padding: 15px;
+    border: radius 5px;
+    width: 2px;
+    height: 3px;
+
+}
+.contact-form h2{
+    text-align: center;
+    margin-bottom: 0px;
+    color: #333;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin:8px;
+
+}
+.input-group label{
+    margin:0;
+    font-size: 14px;
+    color: #333;
+
+}
+button{
+    width: 100px;
+    padding: 10px;
+    background-color:blue;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+border-radius: 8px;
+cursor: pointer;
+
+}
+button:hover{
+background-color: green;
+
+}@media(max-width :768px){
+    .contact-card{
+        width:90%;
+        padding: 20px;
+    }
+
+}
